@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <h1>permiso de ingreso</h1>
+    
+        <label>ingrese su nombre</label>
+        <input type="text" id="name">
+
+        <label> edad</label>
+        <input type="number" id = "age">
+
+        <input type="button" value = "enviar"
+        onclick="verificar()">
+        <input type="reset" value = "cancelar">
+       
+    
+        
+    </form>
+    <p id="respuesta"></p>
+</body>
+    <script>
+        function verificar(){
+        var x= document.getElementById("respuesta");
+        var ag = document.getElementById("age").value;
+        var na = document.getElementById("name");
+
+        if (parseInt(age)>=18){
+            x.innerHTML = na+ "ingreso correcto";
+        } else{
+            x.innerHTML = na+ "nada";
+        }
+        }
+</script>
+        
+
+</html>

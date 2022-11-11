@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <h1>perimetro de un cuadrado</h1>
+    
+        <label>ingrese un lado</label>
+        <input type="text" id="lado">
+    
+        <input type="button" value="Enviar" onclick="calcular()">
+        <input type="reset" value="cancelar">
+    </form>
+    <p id="respuesta"></p>
+    <script>
+        function calcular  (){
+            var x= document.getElementById("respuesta");
+            var a = document.getElementById("lado").value;
+
+            var sol = 4*parseInt(a);
+            x.innerHTML = sol;
+            
+    
+        }
+    </script>
+</body>
+</html>
